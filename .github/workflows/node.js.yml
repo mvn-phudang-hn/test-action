@@ -17,5 +17,5 @@ jobs:
     steps:
     - name: "Echo"
       env:
-        SECRETS_VARS: ${{ toJson(secrets) }}
+        SECRETS_VARS: $DEPLOY_KEY
       run: echo "$SECRETS_VARS"
