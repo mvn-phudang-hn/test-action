@@ -16,4 +16,6 @@ jobs:
 
     steps:
     - name: Dump GitHub context
-      run: echo "${{ secrets.DEPLOY_KEY }}"
+      env: 
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: echo $DEPLOY_KEY
