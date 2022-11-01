@@ -16,4 +16,4 @@ jobs:
 
     steps:
     - name: "Echo"
-      run: echo ${{ env.DEPLOY_KEY }}
+      run: echo "$GITHUB_CONTEXT"
