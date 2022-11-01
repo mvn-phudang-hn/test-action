@@ -16,4 +16,4 @@ jobs:
 
     steps:
     - name: "Echo"
-      run: echo ${{ DEPLOY_KEY }}
+      run: echo "$DEPLOY_KEY"
