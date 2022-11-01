@@ -17,5 +17,5 @@ jobs:
     steps:
     - name: "Echo"
       env:
-        SECRETS_VARS: ${{ toJson(env) }}
+        SECRETS_VARS: ${{ env }}
       run: echo "$SECRETS_VARS"
