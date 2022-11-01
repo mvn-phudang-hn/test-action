@@ -16,6 +16,4 @@ jobs:
 
     steps:
     - name: "Echo"
-      env:
-        SECRETS_VARS: $DEPLOY_KEY
-      run: echo "$SECRETS_VARS"
+      run: echo ${{ DEPLOY_KEY }}
