@@ -30,6 +30,3 @@ jobs:
       env:
         SECRETS_VARS: ${{ toJson(secrets) }}
       run: echo "$SECRETS_VARS"
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
